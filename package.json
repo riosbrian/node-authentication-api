@@ -17,9 +17,11 @@
     "eslint": "^9.39.2",
     "globals": "^17.1.0",
     "rimraf": "^6.1.2",
+    "supertest": "^7.2.2",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18"
   }
 }
