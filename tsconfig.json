@@ -44,6 +44,7 @@
     "baseUrl": ".",
     "paths": {
       "@config/*": ["src/config/*"],
+      "@shared/*": ["src/shared/*"],
       "@server/*": ["src/server/*"],
       "@modules/*": ["src/modules/*"]
     }
