@@ -3,7 +3,7 @@ import type { RegisterUserDTO } from './dto/register-user.dto.js';
 import { User } from '@modules/user/domain/user.entity.js';
 import { Id } from '@shared/domain/value-objects/id.vo.js';
 import { Email } from '@modules/user/domain/value-objects/email.vo.js';
-import type { PasswordHasherPort } from '@modules/auth/infrastructure/password-hasher.js';
+import type { PasswordHasherPort } from '../domain/password-hasher.port.js';
 
 export class RegisterUserUseCase {
   constructor(

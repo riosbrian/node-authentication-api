@@ -1,7 +1,7 @@
 import { LoginUserUseCase } from '@modules/auth/application/login-user.usecase.js';
 import { RegisterUserUseCase } from '@modules/auth/application/register-user.usecase.js';
+import type { PasswordHasherPort } from '@modules/auth/domain/password-hasher.port.js';
 import type { UserPort } from '@modules/user/domain/user.port.js';
-import type { PasswordHasherPort } from '@modules/auth/infrastructure/password-hasher.js';
 import type { Request, Response } from 'express';
 
 export class AuthController {
