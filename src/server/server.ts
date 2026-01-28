@@ -1,6 +1,7 @@
 import http from 'node:http';
 import { envs } from '@config/envs.js';
 import { ExpressAdapter } from './express/app.js';
+import { connectToMongoDB } from './data/mongodb.connection.js';
 
 const expressApp = new ExpressAdapter();
 const server = http.createServer(expressApp.handler);
@@ -12,6 +13,6 @@ function startServer(port: number) {
 }
 
 export async function bootstrap() {
-  // TODO: Add DB connection
+  await connectToMongoDB(envs.MONGO_DB_NAME);
   startServer(envs.PORT);
 }

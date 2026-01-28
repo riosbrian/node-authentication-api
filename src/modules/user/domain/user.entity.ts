@@ -7,8 +7,8 @@ export interface UserProps {
   email: Email;
   password: string;
   isVerified: boolean;
-  createdDate: Date;
-  updatedDate: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export type RawUser = Omit<UserProps, 'id' | 'email'> & {
@@ -30,8 +30,8 @@ export class User {
       email: this.props.email.value,
       password: this.props.password,
       isVerified: this.props.isVerified,
-      createdDate: this.props.createdDate,
-      updatedDate: this.props.updatedDate,
+      createdAt: this.props.createdAt,
+      updatedAt: this.props.updatedAt,
     };
   }
 }
